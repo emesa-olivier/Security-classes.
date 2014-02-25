@@ -10,7 +10,7 @@ CSRF-Security-class
 
 <pre>
 define('CSRF_TIME', 4);
-<pre>
+</pre>
 Will make the token expire after 4 minutes.
 
 <hr>
