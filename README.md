@@ -15,17 +15,37 @@ Will make the token expire after 4 minutes.
 
 <hr>
 
+<pre>
 $security = new security_module();
-
-$token = $security->get();
-
-$security->get(); // returns a new token.
-$security->check($token); // returns true when the token is valid, if not it will return false.
-$security->view(); // returns all the open CSRF sessions.
-$security->remove($token); // remove a token.
-
 </pre>
 
+With `new` you can initialize a new class, you have to do this to use the class;
+
+<hr>
+
+<pre>
+$security->get();
+</pre>
+returns a new token.
+<hr>
+
+<pre>
+$security->check($token); 
+</pre>
+Returns true when the token is valid, if not it will return false.
+<hr>
+
+<pre>
+$security->view();
+</pre>
+ returns all the open CSRF sessions.
+<hr>
+
+<pre>
+$security->remove($token);
+</pre>
+remove a token.
+<hr>
 <h1>Preview script</h1>
 
 <pre>
