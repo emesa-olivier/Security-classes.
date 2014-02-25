@@ -2,6 +2,10 @@ CSRF-Security-class
 ===================
 
 
+<h1>First, you need to start a session!</h1>
+
+<pre> session_start(); </pre>
+
 <h1>Initialize the scripts</h1>
 
 <pre>
