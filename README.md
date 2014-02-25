@@ -15,6 +15,7 @@ $security = new security_module();
 
 $security->get(); // returns a new token.
 $security->check($token); // returns true when the token is valid, if not it will return false.
+$security->view(); // returns all the open CSRF sessions.
 
 </pre>
 
