@@ -17,7 +17,7 @@ $security->check($token); // returns true when the token is valid, if not it wil
 <h1>Preview script</h1>
 
 <pre>
-<?php
+
 require_once 'csrf.class.php';
 
 $security = new security_module();
@@ -29,5 +29,5 @@ if(isset($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_REQUEST['token'])) {
    // token invalid.
   }
 }
-?>
+
 </pre>
