@@ -9,7 +9,11 @@ CSRF-Security-class
 <h1>Initialize the scripts</h1>
 
 <pre>
-define('CSRF_TIME', 4); // Will make the token expire after 4 minutes.
+define('CSRF_TIME', 4);
+<pre>
+Will make the token expire after 4 minutes.
+
+<hr>
 
 $security = new security_module();
 
