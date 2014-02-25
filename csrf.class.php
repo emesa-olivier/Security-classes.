@@ -9,7 +9,6 @@
 class security_module {
 
 	public $token;
-	public $tokens = array();
 	
 	public function __construct() {
 		
@@ -23,7 +22,7 @@ class security_module {
 			}
 		}
 		
-		$this->tokens = array_values($this->tokens);
+		$_SESSION['tokens'] = array_values($_SESSION['tokens']);
 		
 	}
 	
@@ -35,6 +34,10 @@ class security_module {
 		$this->set($this->token);
 		
 		return $this->token;
+	}
+	
+	public function last() {
+		return end($_SESSION['tokens']);
 	}
 	
 	public function set($token) {
