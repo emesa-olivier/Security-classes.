@@ -13,9 +13,12 @@ define('CSRF_TIME', 4); // Will make the token expire after 4 minutes.
 
 $security = new security_module();
 
+$token = $security->get();
+
 $security->get(); // returns a new token.
 $security->check($token); // returns true when the token is valid, if not it will return false.
 $security->view(); // returns all the open CSRF sessions.
+$security->remove($token); // remove a token.
 
 </pre>
 
