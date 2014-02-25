@@ -54,7 +54,7 @@ require_once 'csrf.class.php';
 
 $security = new security_module();
 
-if(isset($_SERVER['REQUEST_METHOD'] == 'POST') && isset($_REQUEST['token'])) {
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_REQUEST['token'])) {
   if($security->check($_REQUEST['token'])) {
    // token valid.
   } else {
