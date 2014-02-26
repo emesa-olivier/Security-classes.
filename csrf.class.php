@@ -6,7 +6,7 @@
 *  @last update = 24-2-2014
 */
 
-class security_module {
+class CSRF_Token {
 
 	public $token;
 	
