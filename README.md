@@ -16,7 +16,7 @@ Will make the token expire after 4 minutes.
 <hr>
 
 <pre>
-$security = new security_module();
+$security = new CSRF_Token();
 </pre>
 
 With `new` you can initialize a new class, you have to do this to use the class;
@@ -52,7 +52,7 @@ remove a token.
 
 require_once 'csrf.class.php';
 
-$security = new security_module();
+$security = new CSRF_Token();
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_REQUEST['token'])) {
   if($security->check($_REQUEST['token'])) {
