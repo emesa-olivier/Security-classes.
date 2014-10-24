@@ -1,7 +1,8 @@
 CSRF-Security-class
 ===================
 
-
+#Code is deprecated, Please go to https://github.com/smiegles/PHP-Security
+===================
 <h1>First, you need to start a session!</h1>
 
 <pre> session_start(); </pre>
